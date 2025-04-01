@@ -514,6 +514,10 @@ img {
     color: var(--dark-color);
 }
 
+.project-info a p {
+    font-weight: normal;
+}
+
 .project-info p {
     color: var(--gray-color);
     font-size: 16px;
