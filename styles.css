@@ -317,15 +317,18 @@ img {
 
 .education-table-wrapper {
     overflow-x: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    /* This will help with Firefox rendering */
+    display: block;
+    width: 100%;
 }
 
 .education-table {
     width: 100%;
-    border-collapse: collapse;
-    box-shadow: var(--box-shadow);
+    border-collapse: separate; /* Changed from collapse for Firefox */
+    border-spacing: 0;
     background-color: white;
-    border-radius: var(--border-radius);
-    overflow: hidden;
 }
 
 .education-table th,
@@ -340,6 +343,24 @@ img {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+}
+
+/* Specific styles for top corners */
+.education-table th:first-child {
+    border-top-left-radius: var(--border-radius);
+}
+
+.education-table th:last-child {
+    border-top-right-radius: var(--border-radius);
+}
+
+/* Specific styles for bottom corners */
+.education-table tr:last-child td:first-child {
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.education-table tr:last-child td:last-child {
+    border-bottom-right-radius: var(--border-radius);
 }
 
 .education-table tr:last-child td {
