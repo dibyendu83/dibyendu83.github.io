@@ -5,44 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dibyendu Rakshit | Staff Software Engineer</title>
     
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-	<nav class="navbar">
-		<div class="container">
-			<div class="logo">DR</div>
-			<label for="nav-toggle" class="nav-toggle-label">
-				<span></span>
-			</label>
-			<ul class="nav-links">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#education">Academics</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-    
-    <header id="home" class="hero">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container">
+            <a class="navbar-brand logo" href="#">DR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header id="home" class="hero d-flex align-items-center text-white">
+        <div class="container text-center">
             <div class="hero-content">
-                <img src="profile.jpg" alt="Dibyendu Rakshit" class="profile-img">
-                <h1>Dibyendu Rakshit</h1>
-                <h2>Staff Software Engineer</h2>
-                <p>Java | Spring Boot | Microservices | AWS | Cloud Computing</p>
-                <div class="social-icons">
+                <img src="profile.jpg" alt="Dibyendu Rakshit" class="profile-img mb-4">
+                <h1 class="fw-bold mb-2">Dibyendu Rakshit</h1>
+                <h2 class="fw-normal mb-3">Staff Software Engineer</h2>
+                <p class="mb-4">Java | Spring Boot | Microservices | AWS | Cloud Computing</p>
+                <div class="social-icons d-flex justify-content-center gap-3 mb-4">
                     <a href="https://www.linkedin.com/in/dibyendurakshit/" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -53,155 +71,163 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-				<div class="download-resume">
-					<a href="https://dibyendu-rakshit.s3.ap-south-1.amazonaws.com/dibyendu-rakshit-resume.pdf" class="btn" target="_blank">
-						<i class="fas fa-download"></i> Download Resume
-					</a>
-				</div>
+                <div class="download-resume">
+                    <a href="https://dibyendu-rakshit.s3.ap-south-1.amazonaws.com/dibyendu-rakshit-resume.pdf" class="btn btn-resume" target="_blank">
+                        <i class="fas fa-download me-2"></i> Download Resume
+                    </a>
+                </div>
             </div>
         </div>
     </header>
     
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section id="about" class="section py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
+            <div class="section-title text-center mb-5">
+                <h2 class="position-relative fw-bold">About Me</h2>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a Staff Software Engineer with 18+ years of experience in product development, design, and architecture in Java, J2EE.
-                        Currently working on building a SAAS based supply chain product with Microservice architecture.
-                    </p>
-                    <p>
-                        Passionate about technology, I constantly strive to stay at the forefront of innovation, continuously learning and refining
-						my skills. My goal is to contribute to the growth and success of the company, recognizing that organizational growth fosters
-						individual growth.
-                    </p>
-                    <p>
-                        With strong expertise in Core Java, Spring Boot, Hibernate, SQL, and Python, I have extensive experience in writing complex
-						SQL queries and developing scalable business solutions,from analysis and design to full-scale deployment.
-                    </p>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <p class="text-muted">
+                            I am a Staff Software Engineer with 18+ years of experience in product development, design, and architecture in Java, J2EE.
+                            Currently working on building a SAAS based supply chain product with Microservice architecture.
+                        </p>
+                        <p class="text-muted">
+                            Passionate about technology, I constantly strive to stay at the forefront of innovation, continuously learning and refining
+                            my skills. My goal is to contribute to the growth and success of the company, recognizing that organizational growth fosters
+                            individual growth.
+                        </p>
+                        <p class="text-muted">
+                            With strong expertise in Core Java, Spring Boot, Hibernate, SQL, and Python, I have extensive experience in writing complex
+                            SQL queries and developing scalable business solutions, from analysis and design to full-scale deployment.
+                        </p>
+                    </div>
                 </div>
-                <div class="skills">
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Java 11</span>
-                            <span class="skill-item">Python 3</span>
-                            <span class="skill-item">SQL</span>
-                            <span class="skill-item">Angular 18 (Basic)</span>
+                <div class="col-lg-6">
+                    <div class="skills">
+                        <div class="skill-category mb-4">
+                            <h3 class="fw-semibold text-primary mb-3">Languages</h3>
+                            <div class="skill-list d-flex flex-wrap gap-2">
+                                <span class="skill-item">Java 11</span>
+                                <span class="skill-item">Python 3</span>
+                                <span class="skill-item">SQL</span>
+                                <span class="skill-item">Angular 18 (Basic)</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Frameworks & Technologies</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Spring Boot</span>
-                            <span class="skill-item">Spring MVC</span>
-                            <span class="skill-item">Spring Data</span>
-                            <span class="skill-item">Spring AOP</span>
-                            <span class="skill-item">REST</span>
-                            <span class="skill-item">Microservices</span>
-							<span class="skill-item">Airflow</span>
+                        <div class="skill-category mb-4">
+                            <h3 class="fw-semibold text-primary mb-3">Frameworks & Technologies</h3>
+                            <div class="skill-list d-flex flex-wrap gap-2">
+                                <span class="skill-item">Spring Boot</span>
+                                <span class="skill-item">Spring MVC</span>
+                                <span class="skill-item">Spring Data</span>
+                                <span class="skill-item">Spring AOP</span>
+                                <span class="skill-item">REST</span>
+                                <span class="skill-item">Microservices</span>
+                                <span class="skill-item">Airflow</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Databases</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Oracle 19c</span>
-                            <span class="skill-item">PostgreSQL</span>
-							<span class="skill-item">MySQL</span>
-                            <span class="skill-item">MongoDB</span>
-							<span class="skill-item">Elasticsearch</span>
+                        <div class="skill-category mb-4">
+                            <h3 class="fw-semibold text-primary mb-3">Databases</h3>
+                            <div class="skill-list d-flex flex-wrap gap-2">
+                                <span class="skill-item">Oracle 19c</span>
+                                <span class="skill-item">PostgreSQL</span>
+                                <span class="skill-item">MySQL</span>
+                                <span class="skill-item">MongoDB</span>
+                                <span class="skill-item">Elasticsearch</span>
+                            </div>
                         </div>
-                    </div>
-					<div class="skill-category">
-                        <h3>Event Streaming/Messaging</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Kafka</span>
-                            <span class="skill-item">Rabbit MQ</span>
+                        <div class="skill-category mb-4">
+                            <h3 class="fw-semibold text-primary mb-3">Event Streaming/Messaging</h3>
+                            <div class="skill-list d-flex flex-wrap gap-2">
+                                <span class="skill-item">Kafka</span>
+                                <span class="skill-item">Rabbit MQ</span>
+                            </div>
                         </div>
-                    </div>
-					<div class="skill-category">
-                        <h3>Caching/In-Memory Data Store</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Redis</span>
+                        <div class="skill-category mb-4">
+                            <h3 class="fw-semibold text-primary mb-3">Caching/In-Memory Data Store</h3>
+                            <div class="skill-list d-flex flex-wrap gap-2">
+                                <span class="skill-item">Redis</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>DevOps & Cloud</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Docker</span>
-                            <span class="skill-item">Kubernetes</span>
-                            <span class="skill-item">AWS</span>
-                            <span class="skill-item">Git</span>
-                            <span class="skill-item">Maven</span>
-							<span class="skill-item">Jenkins</span>
-							<span class="skill-item">GitHub Actions</span>
-							<span class="skill-item">Sonar</span>
+                        <div class="skill-category mb-4">
+                            <h3 class="fw-semibold text-primary mb-3">DevOps & Cloud</h3>
+                            <div class="skill-list d-flex flex-wrap gap-2">
+                                <span class="skill-item">Docker</span>
+                                <span class="skill-item">Kubernetes</span>
+                                <span class="skill-item">AWS</span>
+                                <span class="skill-item">Git</span>
+                                <span class="skill-item">Maven</span>
+                                <span class="skill-item">Jenkins</span>
+                                <span class="skill-item">GitHub Actions</span>
+                                <span class="skill-item">Sonar</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-	<section id="education" class="section section-alt">
-		<div class="container">
-			<div class="section-title">
-				<h2>Academics</h2>
-			</div>
-			<div class="education-content">
-				<p class="education-intro">
-					Bachelor of Technology in Electronics and Telecommunication, <strong>National Institute of Technology (NIT) Jalandhar</strong>, India, 2006 with 71.1% marks.
-				</p>
-				<div class="education-table-wrapper">
-					<table class="education-table">
-						<thead>
-							<tr>
-								<th>Examination</th>
-								<th>Board/University</th>
-								<th>Year</th>
-								<th>Aggregate</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Bachelor of Technology in <em>Electronics and Telecommunication Engineering.</em></td>
-								<td><em>National Institute of Technology Jalandhar</em></td>
-								<td>2002-2006</td>
-								<td>71.1%</td>
-							</tr>
-							<tr>
-								<td>Higher Secondary</td>
-								<td><em>West Bengal Council of Higher Secondary Education (WBCHSE)</em></td>
-								<td>2000-2002</td>
-								<td>78.2%</td>
-							</tr>
-							<tr>
-								<td>Secondary</td>
-								<td><em>West Bengal Board of Secondary Education (WBBSE)</em></td>
-								<td>2000</td>
-								<td>86.4%</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</section>
     
-    <section id="experience" class="section section-alt">
+    <!-- Education Section -->
+    <section id="education" class="section section-alt py-5 bg-white">
         <div class="container">
-            <div class="section-title">
-                <h2>Work Experience</h2>
+            <div class="section-title text-center mb-5">
+                <h2 class="position-relative fw-bold">Academics</h2>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
+            <div class="education-content">
+                <p class="education-intro text-muted mb-4">
+                    Bachelor of Technology in Electronics and Telecommunication, <strong>National Institute of Technology (NIT) Jalandhar</strong>, India, 2006 with 71.1% marks.
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-hover education-table">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Examination</th>
+                                <th>Board/University</th>
+                                <th>Year</th>
+                                <th>Aggregate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bachelor of Technology in <em>Electronics and Telecommunication Engineering.</em></td>
+                                <td><em>National Institute of Technology Jalandhar</em></td>
+                                <td>2002-2006</td>
+                                <td>71.1%</td>
+                            </tr>
+                            <tr>
+                                <td>Higher Secondary</td>
+                                <td><em>West Bengal Council of Higher Secondary Education (WBCHSE)</em></td>
+                                <td>2000-2002</td>
+                                <td>78.2%</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary</td>
+                                <td><em>West Bengal Board of Secondary Education (WBBSE)</em></td>
+                                <td>2000</td>
+                                <td>86.4%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt py-5 bg-white">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="position-relative fw-bold">Work Experience</h2>
+            </div>
+            <div class="timeline position-relative">
+                <div class="timeline-item mb-5">
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jan 2019 - Present</div>
-                        <div class="timeline-company">Blueyonder India Pvt. Ltd</div>
-                        <div class="timeline-position">Staff Software Engineer</div>
+                    <div class="timeline-content shadow-sm p-4 bg-white rounded">
+                        <div class="timeline-date text-primary fw-semibold">Jan 2019 - Present</div>
+                        <div class="timeline-company fw-bold fs-5">Blueyonder India Pvt. Ltd</div>
+                        <div class="timeline-position text-muted fst-italic mb-3">Staff Software Engineer</div>
                         <ul class="timeline-description">
                             <li>Spearheaded the migration of a monolithic application to a microservices architecture to improve scalability, maintainability, and deployment flexibility.</li>
                             <li>Designed and implemented multiple microservices, leveraging technologies like Spring Boot, Docker, and Kubernetes for containerization and orchestration.</li>
@@ -209,16 +235,16 @@
                             <li>Introduced CI/CD pipelines to automate the build, test, and deployment processes, enhancing deployment speed and consistency.</li>
                             <li>Utilized RESTful APIs, messaging queues (e.g., Kafka), and asynchronous communication to ensure seamless integration between microservices.</li>
                             <li>Conducted performance optimizations, including database restructuring, caching, and monitoring improvements to support the new microservices environment.</li>
-							<li>Ensured comprehensive testing strategies, including unit, integration, and contract tests, to guarantee service reliability and consistency.</li>
+                            <li>Ensured comprehensive testing strategies, including unit, integration, and contract tests, to guarantee service reliability and consistency.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item mb-5">
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jun 2016 - Dec 2018</div>
-                        <div class="timeline-company">greytHR Software Pvt. Ltd</div>
-                        <div class="timeline-position">Principal Software Engineer</div>
+                    <div class="timeline-content shadow-sm p-4 bg-white rounded">
+                        <div class="timeline-date text-primary fw-semibold">Jun 2016 - Dec 2018</div>
+                        <div class="timeline-company fw-bold fs-5">greytHR Software Pvt. Ltd</div>
+                        <div class="timeline-position text-muted fst-italic mb-3">Principal Software Engineer</div>
                         <ul class="timeline-description">
                             <li>Core member of product engineering team focusing on architecture design</li>
                             <li>Developed Spring Boot microservices with Kafka</li>
@@ -226,16 +252,16 @@
                             <li>Implemented employee shift detection using Apache Ignite</li>
                             <li>Integrated Elasticsearch for search functionality</li>
                             <li>Involved in team building and mentoring junior members</li>
-							<li><strong>Awarded "Most Rising Star" for outstanding performance and contributions to the team.</strong></li>
+                            <li><strong>Awarded "Most Rising Star" for outstanding performance and contributions to the team.</strong></li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item mb-5">
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Oct 2014 - May 2016</div>
-                        <div class="timeline-company">Oracle India Pvt. Ltd</div>
-                        <div class="timeline-position">Principal Software Engineer</div>
+                    <div class="timeline-content shadow-sm p-4 bg-white rounded">
+                        <div class="timeline-date text-primary fw-semibold">Oct 2014 - May 2016</div>
+                        <div class="timeline-company fw-bold fs-5">Oracle India Pvt. Ltd</div>
+                        <div class="timeline-position text-muted fst-italic mb-3">Principal Software Engineer</div>
                         <ul class="timeline-description">
                             <li>Worked in Oracle Marketing Cloud division</li>
                             <li>Core member of product engineering team</li>
@@ -246,12 +272,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item mb-5">
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jan 2013 - Sep 2014</div>
-                        <div class="timeline-company">Collective Media Softech Pvt. Ltd</div>
-                        <div class="timeline-position">Senior Software Engineer</div>
+                    <div class="timeline-content shadow-sm p-4 bg-white rounded">
+                        <div class="timeline-date text-primary fw-semibold">Jan 2013 - Sep 2014</div>
+                        <div class="timeline-company fw-bold fs-5">Collective Media Softech Pvt. Ltd</div>
+                        <div class="timeline-position text-muted fst-italic mb-3">Senior Software Engineer</div>
                         <ul class="timeline-description">
                             <li>Worked on online ad serving platforms</li>
                             <li>Focused on application performance improvements</li>
@@ -260,16 +286,16 @@
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item mb-5">
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Earlier Experience</div>
-                        <div class="timeline-company">Misys Banking System, Oracle, Eka Software</div>
-                        <div class="timeline-position">Senior Software Engineer</div>
-                        <ul class="timeline-description-text">
+                    <div class="timeline-content shadow-sm p-4 bg-white rounded">
+                        <div class="timeline-date text-primary fw-semibold">Earlier Experience</div>
+                        <div class="timeline-company fw-bold fs-5">Misys Banking System, Oracle, Eka Software</div>
+                        <div class="timeline-position text-muted fst-italic mb-3">Senior Software Engineer</div>
+                        <ul class="timeline-description">
                             <li>Worked on various projects in banking, CRM, and commodity trading domains</li>
-							<li>Developed applications using Java, Struts, Spring, Hibernate, and Oracle</li>
-							<li><strong>Received "Best Young Performer of the Year" award at Eka Software<strong></li>
+                            <li>Developed applications using Java, Struts, Spring, Hibernate, and Oracle</li>
+                            <li><strong>Received "Best Young Performer of the Year" award at Eka Software</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -277,120 +303,162 @@
         </div>
     </section>
     
-    <section id="projects" class="section">
+    <!-- Projects Section -->
+    <section id="projects" class="section py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>Projects</h2>
+            <div class="section-title text-center mb-5">
+                <h2 class="position-relative fw-bold">Projects</h2>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="project-info">
-						<a href="https://github.com/dibyendu83/JobSeeker" target="_blank">
-                        <h3>Job Aggregation Platform</h3>
-                        <p>JobSeeker is a comprehensive job aggregation platform that collects and presents job listings from major job boards including Indeed, LinkedIn, and Naukri. </p>
-						<p>It provides a user-friendly interface to search and browse job listings.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Airflow</span>
-							<span class="project-tag">MongoDB</span>
-                            <span class="project-tag">Spring Boot</span>
-							<span class="project-tag">AWS</span>
-							<span class="project-tag">Kubernetes</span>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-top project-img d-flex align-items-center justify-content-center text-white">
+                            <i class="fas fa-code fa-3x"></i>
                         </div>
-						</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-info">
-						<a href="https://github.com/dibyendu83/JobSeeker" target="_blank">
-                        <h3>Financial Data API</h3>
-                        <p>System that scrapes financial data filings from SEC and exposes the values through RESTful API endpoints.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">Spring Boot</span>
-							<span class="project-tag">MongoDB</span>
-                            <span class="project-tag">REST API</span>
+                        <div class="card-body">
+                            <h3 class="card-title fw-semibold">Job Aggregation Platform</h3>
+                            <p class="card-text text-muted">
+                                JobSeeker is a comprehensive job aggregation platform that collects and presents job listings from major job boards including Indeed, LinkedIn, and Naukri.
+                            </p>
+                            <p class="card-text text-muted">
+                                It provides a user-friendly interface to search and browse job listings.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">Python</span>
+                                <span class="badge bg-light text-dark">Airflow</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                                <span class="badge bg-light text-dark">Spring Boot</span>
+                                <span class="badge bg-light text-dark">AWS</span>
+                                <span class="badge bg-light text-dark">Kubernetes</span>
+                            </div>
+                            <a href="https://github.com/dibyendu83/JobSeeker" class="btn btn-outline-dark" target="_blank">
+                                <i class="fab fa-github me-2"></i> View on GitHub
+                            </a>
                         </div>
-						</a>
                     </div>
                 </div>
-				<div class="project-card">
-					<div class="project-img">
-						<i class="fas fa-server"></i>
-					</div>
-					<div class="project-info">
-						<a href="https://github.com/dibyendu83/springboot-reportengine" target="_blank">
-						<h3>Microservice Report Engine</h3>
-						<p>This is a microservice-based application that generates reports asynchronously using Apache Kafka.</p>
-						<p>It is designed to scale out dynamically based on CPU load, ensuring efficient and reliable report generation.</p>
-						<div class="project-tags">
-							<span class="project-tag">Spring Boot</span>
-							<span class="project-tag">Kafka</span>
-							<span class="project-tag">Microservices</span>
-							<span class="project-tag">AWS</span>
-							<span class="project-tag">MySQL</span>
-							<span class="project-tag">Kubernetes</span>
-						</div>
-						</a>
-					</div>
-				</div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p><a href="mailto:dibyendu.rakshit@gmail.com">dibyendu.rakshit@gmail.com</a></p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-top project-img d-flex align-items-center justify-content-center text-white">
+                            <i class="fas fa-chart-line fa-3x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-semibold">Financial Data API</h3>
+                            <p class="card-text text-muted">
+                                System that scrapes financial data filings from SEC and exposes the values through RESTful API endpoints.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">Java</span>
+                                <span class="badge bg-light text-dark">Spring Boot</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                                <span class="badge bg-light text-dark">REST API</span>
+                            </div>
+                            <a href="https://github.com/dibyendu83/JobSeeker" class="btn btn-outline-dark" target="_blank">
+                                <i class="fab fa-github me-2"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
-                    <p><a href="tel:+916361276886">+91 6361276886</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Location</h3>
-                    <p>Bangalore, India</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-top project-img d-flex align-items-center justify-content-center text-white">
+                            <i class="fas fa-server fa-3x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-semibold">Microservice Report Engine</h3>
+                            <p class="card-text text-muted">
+                                This is a microservice-based application that generates reports asynchronously using Apache Kafka.
+                            </p>
+                            <p class="card-text text-muted">
+                                It is designed to scale out dynamically based on CPU load, ensuring efficient and reliable report generation.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">Spring Boot</span>
+                                <span class="badge bg-light text-dark">Kafka</span>
+                                <span class="badge bg-light text-dark">Microservices</span>
+                                <span class="badge bg-light text-dark">AWS</span>
+                                <span class="badge bg-light text-dark">MySQL</span>
+                                <span class="badge bg-light text-dark">Kubernetes</span>
+                            </div>
+                            <a href="https://github.com/dibyendu83/springboot-reportengine" class="btn btn-outline-dark" target="_blank">
+                                <i class="fab fa-github me-2"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <footer>
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt py-5 bg-white">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">DR</div>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/dibyendurakshit/" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/dibyendu83" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:dibyendu.rakshit@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+            <div class="section-title text-center mb-5">
+                <h2 class="position-relative fw-bold">Contact Me</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card contact-card h-100 text-center p-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                            <h3 class="fw-semibold fs-5 mb-2">Email</h3>
+                            <p><a href="mailto:dibyendu.rakshit@gmail.com">dibyendu.rakshit@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card contact-card h-100 text-center p-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                            <h3 class="fw-semibold fs-5 mb-2">Phone</h3>
+                            <p><a href="tel:+916361276886">+91 6361276886</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card contact-card h-100 text-center p-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                            <h3 class="fw-semibold fs-5 mb-2">Location</h3>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Dibyendu Rakshit. All rights reserved.</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center mb-4">
+                <div class="col-auto">
+                    <div class="footer-logo fw-bold fs-4">DR</div>
+                </div>
+                <div class="col-auto">
+                    <div class="social-icons d-flex gap-3">
+                        <a href="https://www.linkedin.com/in/dibyendurakshit/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/dibyendu83" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:dibyendu.rakshit@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center border-top border-secondary pt-3">
+                <p class="mb-0">&copy; <span id="current-year"></span> Dibyendu Rakshit. All rights reserved.</p>
             </div>
         </div>
     </footer>
-	<!-- JavaScript -->
+    
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script>
         document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
